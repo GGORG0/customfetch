@@ -15,9 +15,13 @@
           version = "0.8.6";
           src = ./.;
 
-          nativeBuildInputs = [ pkgs.makeWrapper ];
+          nativeBuildInputs = with pkgs; [
+            makeWrapper
+          ];
 
-          buildInputs = [ ];
+          buildInputs = with pkgs; [
+            libcxx
+          ];
 
           buildPhase = ''
           make DEBUG=0 GUI_MODE=0 -j$(nproc)
