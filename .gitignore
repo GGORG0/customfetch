@@ -47,3 +47,6 @@ scripts/test*
 *.out
 *.app
 .cache
+
+# Nix build output
+result/
