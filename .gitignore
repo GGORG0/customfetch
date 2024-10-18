@@ -49,4 +49,4 @@ scripts/test*
 .cache
 
 # Nix build output
-result/
+result
